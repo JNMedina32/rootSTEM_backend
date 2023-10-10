@@ -1,0 +1,34 @@
+{
+  "name": "rootstem_server",
+  "version": "1.0.0",
+  "description": "express server for rootSTEM",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "Joshua Medina",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-pg-simple": "^9.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "googleapis": "^125.0.0",
+    "jsonwebtoken": "^9.0.1",
+    "node-fetch": "^2.7.0",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.11.3",
+    "pg-promise": "^11.5.3"
+  },
+  "devDependencies": {
+    "ejs": "^3.1.9",
+    "nodemon": "^3.0.1"
+  }
+}

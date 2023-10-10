@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      integrity="undefined"
+      crossorigin="anonymous"
+    />
+    <title>TEST</title>
+  </head>
+  <body style="background-color: #4c4761; color: beige">
+    <div class="container">
+      <h1>A NEW FRIEND!</h1>
+      <div class="col-sm-6 mt-5 col-sm-offset-3">
+        <h1>Please Fill Out</h1>
+        <!-- SIGN UP FORM -->
+        <form action="/create_user" method="post">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" class="form-control" name="first_name" required />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" name="last_name" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email" required />
+          </div>
+          <div class="form-group">
+            <label>Username</label>
+            <input
+              type="text"
+              class="form-control"
+              name="username"
+              placeholder="Leave blank to default to your email + user ID"
+            />
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label> Date of Birth: </label>
+
+            <input
+              type="date"
+              class="form-control"
+              id="dateOfBirth"
+              name="dob"
+              value=""
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn btn-sm btn-primary mt-3 ml-2">
+            Create User
+          </button>
+        </form>
+        <hr />
+        <a href="/"><button class="btn btn-primary">Home</button></a>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="undefined"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
